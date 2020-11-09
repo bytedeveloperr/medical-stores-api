@@ -4,7 +4,7 @@ import compression from "compression";
 import cors from "cors";
 import helmet from "helmet";
 
-import "./app/config/mongoose.js";
+// import "./app/config/mongoose.js";
 import CustomError from "./app/utils/CustomError.js";
 import v1 from "./api/v1/index.js";
 
