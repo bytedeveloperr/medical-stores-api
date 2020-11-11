@@ -1,12 +1,10 @@
 import express from "express";
-import indexRouter from '../v1/routes/user.js';
+import indexRouter from '../v1/index.js';
 import passport from  'passport';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
-import path from 'path';
 import cors from "cors";
 import passportjs from '../../app/config/passport.js';
-// import passportjs from '../../app/config/passport.js.';
 var corsOption = {
   origin: true,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -21,11 +19,6 @@ export default (app)=>{
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
     app.use(cookieParser());
-    // app.use(express.static(path.join(__dirname, 'public')));
     app.use(cors(corsOption));
-   
     app.use('/v1/api', indexRouter);
-    
-
-
 }

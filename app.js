@@ -4,7 +4,7 @@ import compression from "compression";
 import cors from "cors";
 import helmet from "helmet";
 import logger from "morgan";
-// import exp from "express-async-errors";
+import exp from "express-async-errors";
 const app = express();
 
 // import "./app/config/mongoose.js";
