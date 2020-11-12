@@ -1,9 +1,9 @@
 import express from 'express';
-import response from '../../app/utils/response.js';
+import response from '../utils/response.js';
 const app = express()
 
 
-import CustomError from "../../app/utils/CustomError.js";
+import CustomError from "../utils/CustomError.js";
 
 
 

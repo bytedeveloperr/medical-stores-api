@@ -3,7 +3,9 @@ import mongoose from "mongoose";
 
 let options = {
 	useNewUrlParser: true,
-	useUnifiedTopology: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
 };
 
 

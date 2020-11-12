@@ -1,10 +1,10 @@
 import express from "express";
-import indexRouter from '../v1/index.js';
+import indexRouter from '../../api/v1/index.js';
 import passport from  'passport';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import cors from "cors";
-import passportjs from '../../app/config/passport.js';
+import passportjs from '../config/passport.js';
 var corsOption = {
   origin: true,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
